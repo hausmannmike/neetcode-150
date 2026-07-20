@@ -6,33 +6,30 @@ My progress working through the [NeetCode 150](https://neetcode.io/practice) pro
 
 ## Progress
 
-```
-█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  1 / 150  (0.7%)
-```
-
-| Folder | Pattern | Progress |
-|---|---|---|
-| `01_arrays_hashing/` | Arrays & Hashing | `█░░░░░░░░` 1 / 9 |
-| `02_two_pointers/` | Two Pointers | `░░░░░░░░░` 0 / 5 |
-| `03_sliding_window/` | Sliding Window | `░░░░░░░░░` 0 / 6 |
-| `04_stack/` | Stack | `░░░░░░░░░` 0 / 6 |
-| `05_binary_search/` | Binary Search | `░░░░░░░░░` 0 / 7 |
-| `06_linked_list/` | Linked List | `░░░░░░░░░` 0 / 11 |
-| `07_trees/` | Trees | `░░░░░░░░░` 0 / 15 |
-| `08_heap_priority_queue/` | Heap / Priority Queue | `░░░░░░░░░` 0 / 7 |
-| `09_backtracking/` | Backtracking | `░░░░░░░░░` 0 / 10 |
-| `10_tries/` | Tries | `░░░░░░░░░` 0 / 3 |
-| `11_graphs/` | Graphs | `░░░░░░░░░` 0 / 13 |
-| `12_advanced_graphs/` | Advanced Graphs | `░░░░░░░░░` 0 / 6 |
-| `13_dp_1d/` | 1-D Dynamic Programming | `░░░░░░░░░` 0 / 12 |
-| `14_dp_2d/` | 2-D Dynamic Programming | `░░░░░░░░░` 0 / 11 |
-| `15_greedy/` | Greedy | `░░░░░░░░░` 0 / 8 |
-| `16_intervals/` | Intervals | `░░░░░░░░░` 0 / 6 |
-| `17_math_geometry/` | Math & Geometry | `░░░░░░░░░` 0 / 8 |
-| `18_bit_manipulation/` | Bit Manipulation | `░░░░░░░░░` 0 / 7 |
+<p align="center">
+  <img src="assets/progress.svg" alt="1 / 150 solved" width="880" />
+</p>
 
 ## Structure
 
-Solutions live under `solutions/`, one folder per pattern in NeetCode roadmap order (see table above).
+Solutions live under `solutions/`, one folder per pattern in NeetCode roadmap order:
+
+```
+solutions/
+├── 01_arrays_hashing/      ├── 07_trees/                ├── 13_dp_1d/
+├── 02_two_pointers/        ├── 08_heap_priority_queue/  ├── 14_dp_2d/
+├── 03_sliding_window/      ├── 09_backtracking/         ├── 15_greedy/
+├── 04_stack/               ├── 10_tries/                ├── 16_intervals/
+├── 05_binary_search/       ├── 11_graphs/               ├── 17_math_geometry/
+└── 06_linked_list/         └── 12_advanced_graphs/      └── 18_bit_manipulation/
+```
+
+## Updating progress
+
+After adding a solution (`.cpp` file in its pattern folder), refresh the dashboard:
+
+```sh
+python3 scripts/update_progress.py
+```
 
 Reference notes and cheat sheets live in `notes/`.
