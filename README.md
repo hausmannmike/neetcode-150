@@ -1,7 +1,5 @@
 # NeetCode 150 — C++ Solutions
 
-![Progress](https://img.shields.io/badge/NeetCode_150-1%20%2F%20150-2ea44f?style=for-the-badge)
-
 My progress working through the [NeetCode 150](https://neetcode.io/practice) problem list in C++.
 
 ## Progress

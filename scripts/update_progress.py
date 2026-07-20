@@ -4,7 +4,6 @@
 Solved = number of .cpp files in each solutions/ subfolder (+ EXTRA overrides).
 Run after adding a solution: python3 scripts/update_progress.py
 """
-import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -115,12 +114,7 @@ def main():
     out.parent.mkdir(exist_ok=True)
     out.write_text(build_svg())
 
-    readme = ROOT / "README.md"
-    txt = readme.read_text()
-    txt = re.sub(r"NeetCode_150-\d+%20%2F%20\d+", f"NeetCode_150-{done}%20%2F%20{total}", txt)
-    readme.write_text(txt)
-
-    print(f"{done} / {total} solved — wrote {out.relative_to(ROOT)} and updated README badge")
+    print(f"{done} / {total} solved — wrote {out.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
