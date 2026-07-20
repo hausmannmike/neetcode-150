@@ -1,16 +1,16 @@
 # NeetCode 150 C++ Solutions
 
-My progress working through the [NeetCode 150](https://neetcode.io/practice) problem list in C++.
+Working through the [NeetCode 150](https://neetcode.io/practice), a curated list of 150 algorithm problems that covers the 18 core patterns behind technical interviews: from arrays and hashing through graphs, dynamic programming and bit manipulation.
 
-## Progress
+All solutions are written in modern C++.
 
 <p align="center">
   <img src="assets/progress.svg" alt="1 / 150 solved" width="880" />
 </p>
 
-## Structure
+## How this repo is organized
 
-Solutions live under `solutions/`, one folder per pattern in NeetCode roadmap order:
+Every problem lives in `solutions/`, one folder per pattern, ordered to match the NeetCode roadmap:
 
 ```
 solutions/
@@ -22,12 +22,23 @@ solutions/
 └── 06_linked_list/         └── 12_advanced_graphs/      └── 18_bit_manipulation/
 ```
 
-## Updating progress
+Each solution is a single self-contained `.cpp` file. The header comment states the problem, a link to it, the approach in a few sentences and the time and space complexity. The goal is that any file can be opened on its own and understood in under a minute.
 
-After adding a solution (`.cpp` file in its pattern folder), refresh the dashboard:
+Longer-form notes and cheat sheets (for example on hash containers in C++) live in `notes/`.
+
+## Why this list
+
+The NeetCode 150 is deliberately pattern-based rather than volume-based. Solving it end to end demonstrates breadth across every standard data structure and algorithm family, not repetition of one trick. The progress dashboard above is generated from the actual solution files in this repo, so the numbers always reflect committed, working code.
+
+<details>
+<summary>Maintenance: how the dashboard is generated</summary>
+
+<br>
+
+`scripts/update_progress.py` counts the `.cpp` files in each pattern folder and regenerates `assets/progress.svg`. After adding a solution:
 
 ```sh
 python3 scripts/update_progress.py
 ```
 
-Reference notes and cheat sheets live in `notes/`.
+</details>
