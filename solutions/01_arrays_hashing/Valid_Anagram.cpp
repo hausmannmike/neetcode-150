@@ -1,3 +1,7 @@
+#include <string>
+
+using namespace std;
+
 class Solution {
 public:
     bool isAnagram(const string& s, const string& t) {
@@ -17,5 +21,5 @@ public:
         }
 
         return true;
-}
+    }
 };
