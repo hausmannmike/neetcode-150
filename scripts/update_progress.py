@@ -30,7 +30,7 @@ CATEGORIES = [
 ]
 
 # Problems solved but not yet committed as .cpp files. Remove entries once committed.
-EXTRA = {"01_arrays_hashing": 1}
+EXTRA = {}
 
 BG = "#0d1117"
 CARD = "#161b22"
