@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate assets/progress.svg and the README badge from solution counts.
+"""Regenerate assets/progress.svg from solution counts.
 
 Solved = number of .cpp files in each solutions/ subfolder (+ EXTRA overrides).
 Run after adding a solution: python3 scripts/update_progress.py
@@ -29,7 +29,7 @@ CATEGORIES = [
     ("18_bit_manipulation", "Bit Manipulation", 7),
 ]
 
-# Problems solved but not yet committed as .cpp files — remove entries once committed.
+# Problems solved but not yet committed as .cpp files. Remove entries once committed.
 EXTRA = {"01_arrays_hashing": 1}
 
 BG = "#0d1117"
@@ -114,7 +114,7 @@ def main():
     out.parent.mkdir(exist_ok=True)
     out.write_text(build_svg())
 
-    print(f"{done} / {total} solved — wrote {out.relative_to(ROOT)}")
+    print(f"{done} / {total} solved, wrote {out.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

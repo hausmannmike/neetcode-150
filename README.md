@@ -1,4 +1,4 @@
-# NeetCode 150 — C++ Solutions
+# NeetCode 150 C++ Solutions
 
 My progress working through the [NeetCode 150](https://neetcode.io/practice) problem list in C++.
 
