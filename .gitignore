@@ -1,0 +1,12 @@
+# Compiled object files and binaries
+*.o
+*.obj
+*.out
+a.out
+*.exe
+
+# Debug symbols
+*.dSYM/
+
+# macOS
+.DS_Store
